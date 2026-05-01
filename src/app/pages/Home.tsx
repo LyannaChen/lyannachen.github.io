@@ -169,8 +169,25 @@ export function Home() {
                 I'm Lyanna (Xingrun) Chen. I'm currently an undergrad majoring in Linguistics,
                 Computer Science, and Anthropology with a minor in Data Science Engineering at
                 UCLA. I'm fortunate to be mentored by the amazing Elaine Wan and Professor
-                Kai-wei Chang at UCLA NLP research group and Professor Kuan-hao Huang at the
-                FLAIR Lab at Texas A&amp;M.
+                Kai-wei Chang at{" "}
+                <a
+                  href="https://web.cs.ucla.edu/~kwchang/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-normal text-sky-600 underline decoration-sky-300 decoration-2 underline-offset-4 hover:text-sky-700"
+                >
+                  UCLA NLP Lab
+                </a>{" "}
+                and Professor Kuan-hao Huang at the{" "}
+                <a
+                  href="https://khhuang.me/group.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-normal text-sky-600 underline decoration-sky-300 decoration-2 underline-offset-4 hover:text-sky-700"
+                >
+                  FLAIR Lab
+                </a>{" "}
+                at Texas A&amp;M.
               </p>
 
               <p>

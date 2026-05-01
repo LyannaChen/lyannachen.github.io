@@ -237,7 +237,7 @@ export default function ResearchCloudBubbles({ initialSelected = [] }: ResearchC
 
   const viewDetails = () => {
     if (selectedKey) {
-      navigate(`/area/${selectedKey}`);
+      navigate(`/research#${selectedKey}`);
     }
   };
 

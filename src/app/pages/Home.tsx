@@ -251,7 +251,7 @@ export function Home() {
         >
           <div className="mb-10">
             <h2 className="text-4xl text-slate-900 font-light relative inline-block">
-              Selected Publications
+              Publications
               <svg className="absolute -bottom-2 left-0 w-full h-4" viewBox="0 0 260 20">
                 <path
                   d="M 4 11 Q 70 5, 130 10 T 256 9"

@@ -1,8 +1,8 @@
 import { createHashRouter, Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
 import { Home } from "./pages/Home";
-import { AreaPage } from "./pages/AreaPage";
 import { BakingPage } from "./pages/BakingPage";
+import { ResearchPage } from "./pages/ResearchPage";
 
 function ScrollToTop() {
   const { pathname, state } = useLocation();
@@ -26,8 +26,8 @@ export const router = createHashRouter([
         Component: Home,
       },
       {
-        path: "/area/:areas",
-        Component: AreaPage,
+        path: "/research",
+        Component: ResearchPage,
       },
       {
         path: "/baking",

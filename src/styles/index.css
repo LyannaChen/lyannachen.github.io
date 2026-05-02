@@ -8,3 +8,84 @@ body,
   max-width: 100%;
   overflow-x: hidden;
 }
+
+html {
+  background: #fefdfb;
+}
+
+html.dark {
+  color-scheme: dark;
+  background: #0f172a;
+}
+
+html.dark body {
+  background: #0f172a;
+}
+
+html.dark .bg-\[\#fefdfb\],
+html.dark .bg-\[\#fefdfb\]\/95 {
+  background-color: #0f172a !important;
+}
+
+html.dark .bg-white,
+html.dark .bg-white\/80,
+html.dark .bg-white\/85 {
+  background-color: rgba(30, 41, 59, 0.82) !important;
+}
+
+html.dark .bg-stone-50\/50 {
+  background-color: rgba(51, 65, 85, 0.45) !important;
+}
+
+html.dark .hover\:bg-stone-50\/50:hover,
+html.dark .hover\:bg-sky-50\/40:hover,
+html.dark .hover\:bg-stone-100\/70:hover {
+  background-color: rgba(56, 189, 248, 0.12) !important;
+}
+
+html.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+html.dark .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+html.dark .text-sky-600 {
+  color: #7dd3fc !important;
+}
+
+html.dark .hover\:text-slate-900:hover,
+html.dark .hover\:text-slate-700:hover,
+html.dark .hover\:text-sky-700:hover,
+html.dark .hover\:text-sky-600:hover {
+  color: #bae6fd !important;
+}
+
+html.dark svg path[stroke="#d6d3d1"],
+html.dark svg path[stroke="#e7e5e4"],
+html.dark svg rect[stroke="#78716c"],
+html.dark svg rect[stroke="#a8a29e"],
+html.dark svg path[stroke="#44403c"],
+html.dark svg path[stroke="#78716c"],
+html.dark svg path[stroke="#a8a29e"] {
+  stroke: #64748b;
+}
+
+html.dark svg circle[fill="#d6d3d1"] {
+  fill: #64748b;
+}
+
+@media (max-width: 640px) {
+  body {
+    min-width: 0;
+  }
+}

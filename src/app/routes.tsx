@@ -2,6 +2,7 @@ import { createHashRouter, Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
 import { Home } from "./pages/Home";
 import { BakingPage } from "./pages/BakingPage";
+import { BakingDetailPage } from "./pages/BakingDetailPage";
 import { ResearchPage } from "./pages/ResearchPage";
 
 function ScrollToTop() {
@@ -32,6 +33,10 @@ export const router = createHashRouter([
       {
         path: "/baking",
         Component: BakingPage,
+      },
+      {
+        path: "/baking/:slug",
+        Component: BakingDetailPage,
       },
     ],
   },

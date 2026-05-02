@@ -170,7 +170,8 @@ export function ResearchPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-16"
         >
-          <svg className="mb-6" width="120" height="10" viewBox="0 0 120 10">
+          <h1 className="text-5xl mb-5 text-slate-900 font-light">Research Areas</h1>
+                  <svg className="mb-6" width="120" height="10" viewBox="0 0 120 10">
             <path
               d="M 3 5 Q 32 2, 60 5 T 117 5"
               stroke="#38bdf8"
@@ -179,7 +180,6 @@ export function ResearchPage() {
               opacity="0.55"
             />
           </svg>
-          <h1 className="text-5xl mb-5 text-slate-900 font-light">Research Areas</h1>
         </motion.div>
 
         <div className="space-y-16">

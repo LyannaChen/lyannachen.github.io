@@ -187,7 +187,7 @@ export function Home() {
                 >
                   FLAIR Lab
                 </a>{" "}
-                at Texas A&amp;M.
+                at Texas A&amp;M. I also previously interned at Lenovo, working on AI PC assistant for games.
               </p>
 
               <p>

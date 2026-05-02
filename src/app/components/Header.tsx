@@ -1,9 +1,25 @@
-import { Code2, Mail, SquareUser } from "lucide-react";
+import { Code2, Mail, Moon, SquareUser, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { motion } from "motion/react";
 
+function getInitialTheme() {
+  if (typeof window === "undefined") return false;
+
+  const savedTheme = window.localStorage.getItem("theme");
+  if (savedTheme) return savedTheme === "dark";
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
 export function Header() {
   const navigate = useNavigate();
+  const [isDark, setIsDark] = useState(getInitialTheme);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+    window.localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
 
   return (
     <motion.header
@@ -20,12 +36,12 @@ export function Header() {
           fill="none"
         />
       </svg>
-      <div className="max-w-7xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Name/Logo */}
           <button
             onClick={() => navigate("/")}
-            className="text-2xl text-slate-900 hover:text-slate-700 transition-colors font-light relative group"
+            className="text-xl sm:text-2xl text-slate-900 hover:text-slate-700 transition-colors font-light relative group text-left"
           >
             Xingrun Lyanna Chen
             {/* Hand-drawn underline on hover */}
@@ -40,7 +56,7 @@ export function Header() {
           </button>
 
           {/* Contact Links */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 sm:gap-6">
             <a
               href="mailto:lyannachen@ucla.edu"
               className="flex items-center gap-2 text-slate-700 hover:text-slate-900 transition-colors group"
@@ -72,6 +88,14 @@ export function Header() {
                 GitHub
               </span>
             </a>
+            <button
+              type="button"
+              onClick={() => setIsDark((value) => !value)}
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              className="flex h-9 w-9 items-center justify-center rounded-full text-slate-700 hover:text-slate-900 hover:bg-stone-100/70 transition-colors"
+            >
+              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
           </div>
         </div>
       </div>

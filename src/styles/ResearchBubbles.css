@@ -251,6 +251,66 @@
   padding: 16px 30px;
 }
 
+html.dark .research-cloud-section {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+html.dark .research-copy p {
+  color: #cbd5e1;
+}
+
+html.dark .bubble-name {
+  color: #e5e7eb;
+}
+
+html.dark .bubble-icon {
+  color: #cbd5e1;
+}
+
+html.dark .project-line,
+html.dark .view-button {
+  color: #e2e8f0;
+}
+
+html.dark .selected-tag {
+  color: #e0f2fe;
+}
+
+html.dark .sketch-bubble:not(.selected) .bubble-svg {
+  opacity: 0.9;
+}
+
+html.dark .sketch-bubble:not(.selected) .bubble-svg path {
+  stroke: #94a3b8;
+  fill: rgba(30, 41, 59, 0.72);
+}
+
+html.dark .sketch-bubble.selected .bubble-svg path {
+  stroke: #38bdf8;
+  fill: rgba(14, 116, 144, 0.22);
+}
+
+html.dark .research-result-card > .rough-frame-svg path {
+  stroke: rgba(148, 163, 184, 0.72);
+  fill: rgba(15, 23, 42, 0.72);
+}
+
+html.dark .selected-tag > .rough-frame-svg path {
+  stroke: #38bdf8;
+  fill: rgba(14, 116, 144, 0.28);
+}
+
+html.dark .project-line > .rough-frame-svg path {
+  stroke: rgba(148, 163, 184, 0.62);
+  fill: rgba(30, 41, 59, 0.76);
+}
+
+html.dark .view-button-frame > .rough-frame-svg path {
+  stroke: #426674;
+  fill: rgba(14, 116, 144, 0.12);
+}
+
 @keyframes bubbleFloat {
   0% {
     margin-top: 0;
@@ -267,39 +327,124 @@
 }
 
 @media (max-width: 900px) {
+  .research-cloud-section {
+    min-height: auto;
+    padding: 64px 18px 76px;
+  }
+
   .research-copy {
     position: relative;
     left: auto;
     top: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 26px;
+    max-width: 560px;
+    text-align: center;
+  }
+
+  .research-copy h2 {
+    font-size: clamp(32px, 9vw, 44px);
+    letter-spacing: -0.03em;
+  }
+
+  .research-copy p {
+    font-size: 16px;
   }
 
   .cloud-stage {
-    height: 620px;
-    margin-top: 20px;
+    display: grid;
+    gap: 18px;
+    height: auto;
+    margin-top: 0;
   }
 
   .sketch-bubble {
-    width: 260px;
-    height: 180px;
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    width: min(100%, 350px);
+    height: 232px;
+    margin: 0 auto;
+    transform: none;
+    animation: none;
   }
 
-  .bubble-0 {
-    left: 35% !important;
-    top: 28% !important;
-  }
-
-  .bubble-1 {
-    left: 62% !important;
-    top: 48% !important;
-  }
-
+  .bubble-1,
   .bubble-2 {
-    left: 42% !important;
-    top: 70% !important;
+    width: min(100%, 350px);
+    height: 232px;
+  }
+
+  .sketch-bubble:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  .bubble-content,
+  .bubble-1 .bubble-content,
+  .bubble-2 .bubble-content {
+    transform: rotate(-2deg);
   }
 
   .research-result-card {
+    margin-top: 32px;
+    min-height: auto;
+    padding: 48px 22px 56px;
+  }
+
+  .research-result-card > .rough-frame-content {
     flex-direction: column;
+    gap: 24px;
+  }
+
+  .research-result-card h3 {
+    font-size: 22px;
+  }
+
+  .project-line {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .view-button {
+    align-self: stretch;
+  }
+
+  .view-button-frame {
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sketch-swirl,
+  .sketch-dot {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .research-cloud-section {
+    padding-inline: 14px;
+  }
+
+  .sketch-bubble,
+  .bubble-1,
+  .bubble-2 {
+    height: 210px;
+  }
+
+  .bubble-icon {
+    font-size: 30px;
+  }
+
+  .bubble-name {
+    font-size: 17px;
+  }
+
+  .research-result-card {
+    padding: 42px 18px 50px;
+  }
+
+  .selected-tags {
+    gap: 10px;
   }
 }

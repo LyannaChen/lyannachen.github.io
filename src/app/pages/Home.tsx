@@ -21,7 +21,7 @@ function isResearchAreaId(value: string): value is ResearchAreaId {
 const publications = [
   {
     title: "InsideOut: Measuring and Mitigating Insider–Outsider Bias in Interview Script Generation",
-    venue: "ACL 2026 Main",
+    venue: "ACL 2026 Main (Oral) ",
     details: (
   <>
     Yixin Wan*,{" "}

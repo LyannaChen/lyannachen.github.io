@@ -17,7 +17,7 @@ export const bakingExperiments: BakingExperiment[] = [
     title: "Basque Cheesecakes",
     description: "Experimenting with flavors...",
     images: [ 
-      "/public/baking/basque-cheesecakes/1.JPG",
+      "/baking/basque-cheesecakes/1.JPG",
       "/baking/basque-cheesecakes/2.JPG",
       "/baking/basque-cheesecakes/3.JPG",
       "/baking/basque-cheesecakes/4.JPG",

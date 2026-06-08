@@ -34,6 +34,10 @@ const researchSections: ResearchSection[] = [
         description: "Analyzing acoustic patterns and variation in spoken Cantonese",
         href: "/pdfs/cantonese.pdf",
       },
+      {
+        title: "Predicate Decomposition and Lambda Calculus in Mandarin Resultative Verb Compounds",
+        description: "Applying formal semantic tools to analyze complex verb constructions in Mandarin",
+      }
     ],
   },
   {
@@ -90,10 +94,6 @@ const researchSections: ResearchSection[] = [
     title: "Anthropology × Linguistics",
     description: "Exploring how language reflects culture, identity, and social structure.",
     projects: [
-      {
-        title: "Metaphors in English and Mandarin",
-        description: "Comparing conceptual metaphor systems across languages",
-      },
       {
         title: "Media Language and Gender",
         description: "Analyzing representations of female terrorists in media discourse",

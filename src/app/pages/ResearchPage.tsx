@@ -36,7 +36,8 @@ const researchSections: ResearchSection[] = [
       },
       {
         title: "Predicate Decomposition and Lambda Calculus in Mandarin Resultative Verb Compounds",
-        description: "Applying formal semantic tools to analyze complex verb constructions in Mandarin",
+        description: "Analyzing complex verb constructions in Mandarin with formal semantic tools",
+        href: "/pdfs/predicate.pdf",
       }
     ],
   },
@@ -60,6 +61,7 @@ const researchSections: ResearchSection[] = [
       {
         title: "Illness Narratives in Hyperthyroidism",
         description: "Exploring how patients describe and make sense of chronic illness",
+        href: "/pdfs/illness.pdf",
       },
       {
         title: "Motherhood and Policy in Chaoshan",
@@ -73,9 +75,9 @@ const researchSections: ResearchSection[] = [
     description: "Designing AI systems that are socially aware, culturally grounded, and human-centered.",
     projects: [
       {
-        title: "Human-AI Interaction in Social Contexts",
-        description: "Studying how people interpret and respond to AI behavior",
-      },
+        title: "Eamotion: A Food-Emotion App",
+        description: "Designing an app to help users explore the relationship between food and emotions",
+      }
     ],
   },
   {
@@ -87,6 +89,11 @@ const researchSections: ResearchSection[] = [
         title: "English Syntax Tree Parser",
         description: "Implementing syntactic parsing using functional programming (Haskell)",
       },
+      {
+        title: "Language Difficulty for Language Models",
+        description: "Revisiting Cross-Linguistic Difficulty Rankings in Language Modeling",
+        href: "/pdfs/difficulty.pdf",
+      }
     ],
   },
   {
@@ -110,10 +117,12 @@ const researchSections: ResearchSection[] = [
       {
         title: "Cultural Fairness in LLMs",
         description: "Measuring and mitigating cultural bias in language model outputs",
+        href: "https://aclanthology.org/2026.acl-long.1094.pdf",
       },
       {
         title: "Shopper Simulation Agents",
         description: "Building persona-driven agents for realistic decision-making",
+        href: "https://arxiv.org/pdf/2605.08334",
       },
     ],
   },

@@ -21,6 +21,7 @@ function isResearchAreaId(value: string): value is ResearchAreaId {
 const publications = [
   {
     title: "InsideOut: Measuring and Mitigating Insider–Outsider Bias in Interview Script Generation",
+    href: "https://aclanthology.org/2026.acl-long.1094.pdf",
     venue: "ACL 2026 Main (Oral) ",
     details: (
   <>
@@ -31,7 +32,8 @@ const publications = [
 ),
   },
   {
-    title: "SALESSIM: Benchmarking and Aligning Multimodal Language Models as Retail User Simulators",
+    title: "CUSTOMERSIM: Benchmarking and Aligning Multimodal Language Models as Retail User Simulators",
+    href: "https://arxiv.org/pdf/2605.08334",
     venue: "preprint under submission",
     details: (
   <>
@@ -276,7 +278,18 @@ export function Home() {
                     {publication.venue}
                   </p>
                   <h3 className="text-2xl text-slate-900 font-light mb-3">
-                    {publication.title}
+                    {publication.href ? (
+                      <a
+                        href={publication.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-sky-600 underline decoration-sky-300 decoration-2 underline-offset-4 transition-colors"
+                      >
+                        {publication.title}
+                      </a>
+                    ) : (
+                      publication.title
+                    )}
                   </h3>
                   <p className="text-slate-700 leading-relaxed font-light">
                     {publication.details}

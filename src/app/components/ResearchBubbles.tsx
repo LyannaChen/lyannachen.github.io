@@ -23,6 +23,7 @@ const projectMap: Record<string, string[]> = {
   linguistics: [
     "Tone 3 Sandhi and Its Interaction with Stress in Mandarin Chinese",
     "A Phonetic Study of Cantonese Speech Patterns",
+    "Predicate Decomposition and Lambda Calculus in Mandarin Resultative Verb Compounds",
   ],
   cs: [
     "BruinWatch: A Campus Safety Application",
@@ -36,9 +37,9 @@ const projectMap: Record<string, string[]> = {
   ],
   "anthropology-cs": [
     "Designing Culturally-Aware AI Systems",
+    "Eamotion: A Food-Emotion App"
   ],
   "anthropology-linguistics": [
-    "A Comparative Study of Language-Related Metaphors in English and Mandarin",
     "Media Representations of Female Terrorists: A Linguistic Analysis",
   ],
   "anthropology-cs-linguistics": [
